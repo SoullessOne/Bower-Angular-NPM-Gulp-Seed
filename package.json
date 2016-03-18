@@ -20,5 +20,21 @@
   "bugs": {
     "url": "https://github.com/SoullessOne/Bower-Angular-NPM-Gulp-Seed/issues"
   },
-  "homepage": "https://github.com/SoullessOne/Bower-Angular-NPM-Gulp-Seed#readme"
+  "homepage": "https://github.com/SoullessOne/Bower-Angular-NPM-Gulp-Seed#readme",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-if": "^2.0.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.0.8",
+    "run-sequence": "^1.1.5",
+    "wiredep": "^4.0.0"
+  }
 }

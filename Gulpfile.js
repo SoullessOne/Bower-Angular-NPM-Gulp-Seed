@@ -4,41 +4,24 @@ var gulp            = require('gulp');
 var sass            = require('gulp-sass');
 var clean           = require('gulp-clean');
 var inject          = require('gulp-inject');
-var concat          = require('gulp-concat');
 var gulpif          = require('gulp-if');
 var useref          = require('gulp-useref');
 var uglify          = require('gulp-uglify');
-var connect         = require('gulp-connect');
 var wiredep         = require('wiredep').stream;
-var history         = require('connect-history-api-fallback');
 var minifyCss       = require('gulp-minify-css');
+var browserSync     = require('browser-sync').create();
 var runSequence     = require('run-sequence');
 var templateCache   = require('gulp-angular-templatecache');
 var angularFilesort = require('gulp-angular-filesort');
 
-//Develop web server
 gulp.task('develop-server', function(){
-  connect.server({
-    root: './app',
-    hostname: '127.0.0.1',
+  browserSync.init({
+    server: {
+      baseDir: "./",
+      index: "index.html"
+    },
     port: 8000,
-    livereload: true,
-    middleware: function(connect, opt){
-      return [ history({}) ];
-    }
-  })
-});
-
-//Production web server
-gulp.task('production-server', function() {
-  connect.server({
-    root: './build',
-    hostname: '0.0.0.0',
-    port: 8000,
-    livereload: true,
-    middleware: function(connect, opt) {
-        return [  history({}) ];
-    }
+    logLevel: "info"
   });
 });
 
