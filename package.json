@@ -1,0 +1,24 @@
+{
+  "name": "bower-angular-npm-gulp-seed",
+  "version": "1.0.0",
+  "description": "a basic gulp and bower configuration, and proyect sample skeleton to start any SPA based on AngularJS framework.",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoullessOne/Bower-Angular-NPM-Gulp-Seed.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "Bower",
+    "Gulp"
+  ],
+  "author": "Santiago Aledo Rosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoullessOne/Bower-Angular-NPM-Gulp-Seed/issues"
+  },
+  "homepage": "https://github.com/SoullessOne/Bower-Angular-NPM-Gulp-Seed#readme"
+}
